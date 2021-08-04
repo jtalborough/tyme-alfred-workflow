@@ -9,8 +9,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Build Alfred Workflow
+      uses: actions/checkout@v2
       id: alfred_builder
     - uses: mperezi/build-alfred-workflow@v1
       with:
